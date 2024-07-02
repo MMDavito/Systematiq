@@ -1,0 +1,6 @@
+C:\Users\david\repos\Systematiq\Controllers\bin\Debug\Controllers.dll
+C:\Users\david\repos\Systematiq\Controllers\bin\Debug\Controllers.pdb
+C:\Users\david\repos\Systematiq\Controllers\obj\Debug\Library.csproj.AssemblyReference.cache
+C:\Users\david\repos\Systematiq\Controllers\obj\Debug\Library.csproj.CoreCompileInputs.cache
+C:\Users\david\repos\Systematiq\Controllers\obj\Debug\Controllers.dll
+C:\Users\david\repos\Systematiq\Controllers\obj\Debug\Controllers.pdb

@@ -1,0 +1,14 @@
+C:\Users\david\repos\Systematiq\systematiq\bin\Debug\net8.0\View.exe
+C:\Users\david\repos\Systematiq\systematiq\bin\Debug\net8.0\View.deps.json
+C:\Users\david\repos\Systematiq\systematiq\bin\Debug\net8.0\View.runtimeconfig.json
+C:\Users\david\repos\Systematiq\systematiq\bin\Debug\net8.0\View.dll
+C:\Users\david\repos\Systematiq\systematiq\bin\Debug\net8.0\View.pdb
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\View.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\View.AssemblyInfoInputs.cache
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\View.AssemblyInfo.cs
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\View.csproj.CoreCompileInputs.cache
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\View.dll
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\refint\View.dll
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\View.pdb
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\View.genruntimeconfig.cache
+C:\Users\david\repos\Systematiq\systematiq\obj\Debug\net8.0\ref\View.dll
