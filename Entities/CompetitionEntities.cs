@@ -3,13 +3,29 @@
 using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using System;
-
+using Microsoft.Extensions.Configuration;
 
 namespace Entities
 {
     public class CompetitionEntities : DbContext
     {
         public DbSet<Competition> Competitions { get; set; }
+
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            //if (!optionsBuilder.IsConfigured)
+            if (true)
+            {
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                   .SetBasePath(Directory.GetCurrentDirectory())
+                   .AddJsonFile("appsettings.json")
+                   .Build();
+                Console.WriteLine(Directory.GetCurrentDirectory());
+                var connectionString = configuration.GetConnectionString("connection_string");
+                optionsBuilder.UseSqlServer(connectionString);
+            }
+        }
     }
 
     public class Competition

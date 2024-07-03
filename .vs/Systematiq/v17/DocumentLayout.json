@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\david\\repos\\Systematiq\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8E1104BC-0584-476F-9DE5-1A180BE08BCC}|Libraries\\Libraries.csproj|c:\\users\\david\\repos\\systematiq\\libraries\\competitionlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8E1104BC-0584-476F-9DE5-1A180BE08BCC}|Libraries\\Libraries.csproj|solutionrelative:libraries\\competitionlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCC9ECA5-C763-4114-A3A5-CE78BC48A7EE}|Entities\\Entities.csproj|c:\\users\\david\\repos\\systematiq\\entities\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DCC9ECA5-C763-4114-A3A5-CE78BC48A7EE}|Entities\\Entities.csproj|solutionrelative:entities\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{196E8E13-8EB3-42B5-8EFD-A27C3F3C6141}|Systematiq\\Systematiq.csproj|c:\\users\\david\\repos\\systematiq\\systematiq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{196E8E13-8EB3-42B5-8EFD-A27C3F3C6141}|Systematiq\\Systematiq.csproj|solutionrelative:systematiq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DCC9ECA5-C763-4114-A3A5-CE78BC48A7EE}|Entities\\Entities.csproj|c:\\users\\david\\repos\\systematiq\\entities\\competitionentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DCC9ECA5-C763-4114-A3A5-CE78BC48A7EE}|Entities\\Entities.csproj|solutionrelative:entities\\competitionentities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DCC9ECA5-C763-4114-A3A5-CE78BC48A7EE}|Entities\\Entities.csproj|c:\\users\\david\\repos\\systematiq\\entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DCC9ECA5-C763-4114-A3A5-CE78BC48A7EE}|Entities\\Entities.csproj|solutionrelative:entities\\entities.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{A7BEBA0C-98F4-4BDB-982C-D83F2DC2A081}|Solution Items{A7BEBA0C-98F4-4BDB-982C-D83F2DC2A081}|C:\\Users\\david\\repos\\Systematiq\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A7BEBA0C-98F4-4BDB-982C-D83F2DC2A081}|Solution Items{A7BEBA0C-98F4-4BDB-982C-D83F2DC2A081}|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{196E8E13-8EB3-42B5-8EFD-A27C3F3C6141}|Systematiq\\Systematiq.csproj|c:\\users\\david\\repos\\systematiq\\systematiq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{196E8E13-8EB3-42B5-8EFD-A27C3F3C6141}|Systematiq\\Systematiq.csproj|solutionrelative:systematiq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DCC9ECA5-C763-4114-A3A5-CE78BC48A7EE}|Entities\\Entities.csproj|c:\\users\\david\\repos\\systematiq\\entities\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DCC9ECA5-C763-4114-A3A5-CE78BC48A7EE}|Entities\\Entities.csproj|solutionrelative:entities\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8E1104BC-0584-476F-9DE5-1A180BE08BCC}|Libraries\\Libraries.csproj|c:\\users\\david\\repos\\systematiq\\libraries\\competitionlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8E1104BC-0584-476F-9DE5-1A180BE08BCC}|Libraries\\Libraries.csproj|solutionrelative:libraries\\competitionlibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,56 +39,84 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\david\\repos\\Systematiq\\Entities\\Program.cs",
+              "RelativeDocumentMoniker": "Entities\\Program.cs",
+              "ToolTip": "C:\\Users\\david\\repos\\Systematiq\\Entities\\Program.cs",
+              "RelativeToolTip": "Entities\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:45:53.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\david\\repos\\Systematiq\\Entities\\appsettings.json",
+              "RelativeDocumentMoniker": "Entities\\appsettings.json",
+              "ToolTip": "C:\\Users\\david\\repos\\Systematiq\\Entities\\appsettings.json",
+              "RelativeToolTip": "Entities\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-03T14:48:13.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "readme.md",
+              "DocumentMoniker": "C:\\Users\\david\\repos\\Systematiq\\readme.md",
+              "RelativeDocumentMoniker": "readme.md",
+              "ToolTip": "C:\\Users\\david\\repos\\Systematiq\\readme.md",
+              "RelativeToolTip": "readme.md",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-07-03T14:46:09.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "CompetitionLibrary.cs",
               "DocumentMoniker": "C:\\Users\\david\\repos\\Systematiq\\Libraries\\CompetitionLibrary.cs",
               "RelativeDocumentMoniker": "Libraries\\CompetitionLibrary.cs",
               "ToolTip": "C:\\Users\\david\\repos\\Systematiq\\Libraries\\CompetitionLibrary.cs",
               "RelativeToolTip": "Libraries\\CompetitionLibrary.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T14:07:26.023Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CompetitionEntities.cs",
               "DocumentMoniker": "C:\\Users\\david\\repos\\Systematiq\\Entities\\CompetitionEntities.cs",
               "RelativeDocumentMoniker": "Entities\\CompetitionEntities.cs",
               "ToolTip": "C:\\Users\\david\\repos\\Systematiq\\Entities\\CompetitionEntities.cs",
               "RelativeToolTip": "Entities\\CompetitionEntities.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAARAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAIA1wCcAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-02T14:03:53.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Entities.csproj",
-              "DocumentMoniker": "C:\\Users\\david\\repos\\Systematiq\\Entities\\Entities.csproj",
-              "RelativeDocumentMoniker": "Entities\\Entities.csproj",
-              "ToolTip": "C:\\Users\\david\\repos\\Systematiq\\Entities\\Entities.csproj",
-              "RelativeToolTip": "Entities\\Entities.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-02T14:03:51.825Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\david\\repos\\Systematiq\\Systematiq\\Program.cs",
               "RelativeDocumentMoniker": "Systematiq\\Program.cs",
               "ToolTip": "C:\\Users\\david\\repos\\Systematiq\\Systematiq\\Program.cs",
               "RelativeToolTip": "Systematiq\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T14:01:04.359Z"
+              "WhenOpened": "2024-07-02T14:01:04.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
