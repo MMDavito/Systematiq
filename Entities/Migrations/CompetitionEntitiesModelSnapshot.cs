@@ -57,7 +57,7 @@ namespace Entities.Migrations
 
                     b.HasIndex("CompetitionId");
 
-                    b.ToTable("Competitor");
+                    b.ToTable("Competitors");
                 });
 
             modelBuilder.Entity("Entities.Competitor", b =>

@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Collections.Generic;
 using System;
 using Microsoft.Extensions.Configuration;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities
 {
@@ -34,6 +35,8 @@ namespace Entities
         public string Name { get; set; }
         public ICollection<Competitor> Competitors { get; set; } = new List<Competitor>();
     }
+    
+    [Table("Competitors")]
     public class Competitor
     {
         public int CompetitorId { get; set; }

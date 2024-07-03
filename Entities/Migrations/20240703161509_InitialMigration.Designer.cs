@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entities.Migrations
 {
     [DbContext(typeof(CompetitionEntities))]
-    [Migration("20240703160147_InitialMigration")]
+    [Migration("20240703161509_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -60,7 +60,7 @@ namespace Entities.Migrations
 
                     b.HasIndex("CompetitionId");
 
-                    b.ToTable("Competitor");
+                    b.ToTable("Competitors");
                 });
 
             modelBuilder.Entity("Entities.Competitor", b =>

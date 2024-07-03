@@ -24,7 +24,7 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Competitor",
+                name: "Competitors",
                 columns: table => new
                 {
                     CompetitorId = table.Column<int>(type: "int", nullable: false)
@@ -34,9 +34,9 @@ namespace Entities.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Competitor", x => x.CompetitorId);
+                    table.PrimaryKey("PK_Competitors", x => x.CompetitorId);
                     table.ForeignKey(
-                        name: "FK_Competitor_Competitions_CompetitionId",
+                        name: "FK_Competitors_Competitions_CompetitionId",
                         column: x => x.CompetitionId,
                         principalTable: "Competitions",
                         principalColumn: "CompetitionId",
@@ -44,8 +44,8 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Competitor_CompetitionId",
-                table: "Competitor",
+                name: "IX_Competitors_CompetitionId",
+                table: "Competitors",
                 column: "CompetitionId");
         }
 
@@ -53,7 +53,7 @@ namespace Entities.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Competitor");
+                name: "Competitors");
 
             migrationBuilder.DropTable(
                 name: "Competitions");
