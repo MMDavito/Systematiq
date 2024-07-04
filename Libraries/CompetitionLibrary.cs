@@ -4,26 +4,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Libraries
 {
     public class CompetitionLibrary
     {
-        private CompetitionEntities competitionEntities;
+        private readonly CompetitionEntities _competitionEntities;
         //TODO: Move all console logs to the view!
         public CompetitionLibrary()
         {
-            competitionEntities = new CompetitionEntities();
+            _competitionEntities = new CompetitionEntities();
+        }
 
-            foreach (var competition in competitionEntities.Competitions)
+        public List<Competition> GetCompetitions()
+        {
+            var comps = _competitionEntities.Competitions.Include(c => c.Competitors);
+            /*
+            //foreach (var competition in _competitionEntities.Competitions)
+            foreach (var competition in comps)
             {
                 Console.WriteLine($"Competition: {Environment.NewLine + competition.ToString() + Environment.NewLine} contains following players: ");
-                var competitors = competitionEntities.Competitors.Where(competitor => competitor.CompetitionId == competition.CompetitionId);
+                var competitors = competition.Competitors;
+                //var competitors = competitionEntities.Competitors.Where(competitor => competitor.CompetitionId == competition.CompetitionId);
                 foreach (var competitor in competitors)
                 {
                     Console.WriteLine($"\t{competitor.ToString()}");
                 }
             }
+            */
+            return comps.ToList();
+        }
+        public Competition GetCompetition(int id)
+        {
+            var comp = _competitionEntities.Competitions.Include(c => c.Competitors).FirstOrDefault(c => c.CompetitionId == id);
+            return comp;
         }
         //public CompetitionEntities GetCompetitionEntities () {     }
         /*
