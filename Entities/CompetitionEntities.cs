@@ -1,8 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-// add a reference to System.ComponentModel.DataAnnotations DLL
-using System.ComponentModel.DataAnnotations;
-using System.Collections.Generic;
-using System;
 using Microsoft.Extensions.Configuration;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -11,6 +7,7 @@ namespace Entities
     public class CompetitionEntities : DbContext
     {
         public DbSet<Competition> Competitions { get; set; }
+        public DbSet<Competition> Competitors { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -72,6 +69,10 @@ namespace Entities
         public int CompetitionId { get; set; }
         public string Name { get; set; }
         public ICollection<Competitor> Competitors { get; set; } = new List<Competitor>();
+        public override string ToString()
+        {
+            return $"name: {Name}, id: {CompetitionId}";
+        }
     }
 
     [Table("Competitors")]
@@ -81,5 +82,9 @@ namespace Entities
         public string Name { get; set; }
         public int CompetitionId { get; set; }
         public virtual CompetitionEntities Competition { get; set; } = null!;
+        public override string ToString()
+        {
+            return $"name: {Name}, id: {CompetitorId}";
+        }
     }
 }

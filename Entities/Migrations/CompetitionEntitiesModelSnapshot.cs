@@ -38,7 +38,7 @@ namespace Entities.Migrations
                     b.HasIndex("Name")
                         .IsUnique();
 
-                    b.ToTable("Competitions");
+                    b.ToTable("Competition");
 
                     b.HasData(
                         new
