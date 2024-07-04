@@ -35,7 +35,7 @@ namespace Entities
             // Adding composite unique key so we only have one player per name and competition:
             // This also makes it harder to allow Nullable Competitor.CompetitionId?
             modelBuilder.Entity<Competitor>()
-                .HasIndex(c => new { c.Name, c.CompetitionId })
+                .HasIndex(c => new { c.CompetitionId, c.Name})
                 .IsUnique();
         }
     }
