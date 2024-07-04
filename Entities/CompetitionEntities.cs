@@ -9,7 +9,6 @@ namespace Entities
         public DbSet<Competition> Competitions { get; set; }
         public DbSet<Competition> Competitors { get; set; }
 
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
