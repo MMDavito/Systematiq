@@ -1,5 +1,5 @@
 # Changing connection-strings:
-If your connectionstrings does not fully match mine then one would need to them in:<br> 
+If your connectionstrings does not fully match mine, then one would need to change them in:<br> 
 ./CommonConfigs/appsettings.json<br>
 
 
