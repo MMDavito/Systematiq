@@ -78,7 +78,6 @@ namespace Entities
     [Table("Competitors")]
     public class Competitor
     {
-        public Competitor() { }
         /*
         public Competitor(int competitorId, string name, int competitionId)
         {
