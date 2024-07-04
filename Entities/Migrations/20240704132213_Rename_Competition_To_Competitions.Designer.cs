@@ -3,6 +3,7 @@ using Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entities.Migrations
 {
     [DbContext(typeof(CompetitionEntities))]
-    partial class CompetitionEntitiesModelSnapshot : ModelSnapshot
+    [Migration("20240704132213_Rename_Competition_To_Competitions")]
+    partial class Rename_Competition_To_Competitions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -140,11 +143,6 @@ namespace Entities.Migrations
                         {
                             CompetitionId = 20,
                             Name = "Competition_20"
-                        },
-                        new
-                        {
-                            CompetitionId = 21,
-                            Name = "Competition_21"
                         });
                 });
 

@@ -42,7 +42,7 @@ namespace Entities
 
         private List<Competition> GetCompetitions()
         {
-            return Enumerable.Range(1, 20)
+            return Enumerable.Range(1, 21)
                 .Select(i => new Competition
                 {
                     CompetitionId = i,
@@ -63,7 +63,7 @@ namespace Entities
             return competitors;
         }
     }
-
+    [Table("Competitions")]
     public class Competition
     {
         public int CompetitionId { get; set; }
@@ -78,6 +78,15 @@ namespace Entities
     [Table("Competitors")]
     public class Competitor
     {
+        public Competitor() { }
+        /*
+        public Competitor(int competitorId, string name, int competitionId)
+        {
+            this.CompetitorId = competitorId;
+            this.Name = name;
+            this.CompetitionId = competitionId;
+        }
+        */
         public int CompetitorId { get; set; }
         public string Name { get; set; }
         public int CompetitionId { get; set; }
