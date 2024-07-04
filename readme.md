@@ -1,8 +1,6 @@
 # Changing connection-strings:
-If your connectionstrings does not fully match mine then one would need to change them both in:<br> 
-./Entities/appsettings.json<br>
-And:<br>
-./SystematiqConsoleView.Programs
+If your connectionstrings does not fully match mine then one would need to them in:<br> 
+./CommonConfigs/appsettings.json<br>
 
 
 # On change of **/Entities:
