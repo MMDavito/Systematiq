@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data.SqlTypes;
 using Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,6 +18,7 @@ namespace Libraries
 
             return comps.ToList();
         }
+
         /// <summary>
         /// 
         /// </summary>

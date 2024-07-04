@@ -122,11 +122,12 @@ namespace Systematiq
 		}
 
 		/// <summary>
-		/// Make a random list of 25 integers with values between 1 and 25
+		/// Make a random list of <code>numberOfIntegers</code> number of integers with values between 1 and 25
 		/// Translate this to swedish, e.g. 1 == "Ett" and then sort it in alphabetical order.
 		/// 
 		/// Will not this always generate the same order?
-		/// I will make 100 random integers instead and sort them so it actually does something than present a static view.
+		/// I will make 100 random integers instead of 25, and sort them so it actually does something, 
+		/// as oposed to just presenting a more or less static view.
 		/// </summary>
 		/// <exception cref="NotImplementedException"></exception>
 		private static void Task3()

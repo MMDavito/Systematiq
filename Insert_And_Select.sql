@@ -5,6 +5,8 @@ SELECT * FROM Competitions;
 SELECT * FROM Competitors ORDER BY CompetitorId ASC;
 
 
-SELECT * FROM Competitions
+SELECT Competitions.CompetitionId, Competitions.Name, Competitors.CompetitorId, Competitors.Name  
+FROM Competitions
 LEFT JOIN Competitors 
-	ON Competitions.CompetitionId = Competitors.CompetitionId;
+	ON Competitions.CompetitionId = Competitors.CompetitionId
+ORDER BY Competitions.CompetitionId;

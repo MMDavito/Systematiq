@@ -23,6 +23,7 @@ namespace Entities
                 optionsBuilder.UseSqlServer(connectionString);
             }
         }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Adding unique constraint for competition.Name:
@@ -49,6 +50,7 @@ namespace Entities
                     Name = $"Competition_{i}"
                 }).ToList();
         }
+
         private List<Competitor> GetCompetitors()
         {
             var competitors = new List<Competitor>();
@@ -63,6 +65,7 @@ namespace Entities
             return competitors;
         }
     }
+
     [Table("Competitions")]
     public class Competition
     {
@@ -78,14 +81,6 @@ namespace Entities
     [Table("Competitors")]
     public class Competitor
     {
-        /*
-        public Competitor(int competitorId, string name, int competitionId)
-        {
-            this.CompetitorId = competitorId;
-            this.Name = name;
-            this.CompetitionId = competitionId;
-        }
-        */
         public int CompetitorId { get; set; }
         public string Name { get; set; }
         public int CompetitionId { get; set; }
