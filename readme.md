@@ -1,5 +1,5 @@
-CD into Entities and run:
+CD into Entities and run:<br>
 dotnet ef migrations add InitialMigration
 
-Followed by:
+Followed by:<br>
 dotnet ef database update
