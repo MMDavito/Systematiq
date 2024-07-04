@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CommonConfigs\CommonConfigs.csproj" />
     <ProjectReference Include="..\Libraries\Libraries.csproj" />
   </ItemGroup>
 

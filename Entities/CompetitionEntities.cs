@@ -1,5 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+﻿using CommonConfigs;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities
@@ -13,13 +13,8 @@ namespace Entities
         {
             if (!optionsBuilder.IsConfigured)
             {
-                IConfigurationRoot configuration = new ConfigurationBuilder()
-                   .SetBasePath(Directory.GetCurrentDirectory())
-                   .AddJsonFile("appsettings.json")
-                   .Build();
-                //Console.WriteLine(Directory.GetCurrentDirectory());
-                var connectionString = configuration.GetConnectionString("connection_string");
-                optionsBuilder.UseSqlServer(connectionString);
+                var configs = new AppConfig();
+                optionsBuilder.UseSqlServer(configs.ConnectionString);
             }
         }
 

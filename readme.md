@@ -1,3 +1,9 @@
+# Changing connection-strings:
+If your connectionstrings does not fully match mine then one would need to change them both in:<br> 
+./Entities/appsettings.json<br>
+And:<br>
+./SystematiqConsoleView.Programs
+
 
 # On change of **/Entities:
 Navigate into Entities and execute following command in terminal:<br>

@@ -1,5 +1,6 @@
 ﻿using Entities;
 using Libraries;
+using CommonConfigs;
 using Microsoft.IdentityModel.Tokens;
 using System.Data.SqlClient;
 using System.Data;
@@ -8,6 +9,7 @@ namespace SystematiqConsoleView
 {
     internal class Program
     {
+        private static AppConfig? _configs;
         private static string _welcomeMessage = $"Welcome, to continue follow following instruction:";
         private static string _instructionMessage = $"Choose 1 of the following options and end with pressing Enter" +
             $"{Environment.NewLine}1: Task 1 using EFCore" +
@@ -16,7 +18,8 @@ namespace SystematiqConsoleView
             $"{Environment.NewLine}c: Close application";
         static void Main(string[] args)
         {
-            // See https://aka.ms/new-console-template for more information
+            _configs = new AppConfig();
+
             Console.WriteLine(_welcomeMessage);
             while (true)
             {
@@ -75,7 +78,6 @@ namespace SystematiqConsoleView
         /// </summary>
         private static void Task2()
         {
-            string connectionString = "Server=localhost\\SQLEXPRESS;Database=systematiq_competition;Trusted_Connection=True;TrustServerCertificate=True;";
             string queryString =
                 @"SELECT Competitions.CompetitionId, Competitions.Name, Competitors.CompetitorId, Competitors.Name  
 				FROM Competitions
@@ -85,7 +87,7 @@ namespace SystematiqConsoleView
 
             var table = new DataTable();
 
-            using (SqlConnection connection = new(connectionString))
+            using (SqlConnection connection = new(_configs.ConnectionString))
             {
                 SqlCommand command = new(queryString, connection);
                 try
