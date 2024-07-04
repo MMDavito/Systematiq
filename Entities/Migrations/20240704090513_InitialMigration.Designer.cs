@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Entities.Migrations
 {
     [DbContext(typeof(CompetitionEntities))]
-    [Migration("20240703161509_InitialMigration")]
+    [Migration("20240704090513_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -34,9 +34,12 @@ namespace Entities.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("CompetitionId");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("Competitions");
                 });
@@ -54,11 +57,14 @@ namespace Entities.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("CompetitorId");
 
                     b.HasIndex("CompetitionId");
+
+                    b.HasIndex("Name", "CompetitionId")
+                        .IsUnique();
 
                     b.ToTable("Competitors");
                 });

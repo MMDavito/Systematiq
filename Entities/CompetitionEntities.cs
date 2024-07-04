@@ -15,17 +15,28 @@ namespace Entities
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //if (!optionsBuilder.IsConfigured)
-            if (true)
+            if (!optionsBuilder.IsConfigured)
             {
                 IConfigurationRoot configuration = new ConfigurationBuilder()
                    .SetBasePath(Directory.GetCurrentDirectory())
                    .AddJsonFile("appsettings.json")
                    .Build();
-                Console.WriteLine(Directory.GetCurrentDirectory());
+                //Console.WriteLine(Directory.GetCurrentDirectory());
                 var connectionString = configuration.GetConnectionString("connection_string");
                 optionsBuilder.UseSqlServer(connectionString);
             }
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Adding unique constraint for competition.Name:
+            modelBuilder.Entity<Competition>()
+                .HasIndex(c => c.Name)
+                .IsUnique();
+            // Adding composite unique key so we only have one player per name and competition:
+            // This also makes it harder to allow Nullable Competitor.CompetitionId?
+            modelBuilder.Entity<Competitor>()
+                .HasIndex(c => new { c.Name, c.CompetitionId })
+                .IsUnique();
         }
     }
 
@@ -35,7 +46,7 @@ namespace Entities
         public string Name { get; set; }
         public ICollection<Competitor> Competitors { get; set; } = new List<Competitor>();
     }
-    
+
     [Table("Competitors")]
     public class Competitor
     {

@@ -31,9 +31,12 @@ namespace Entities.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("CompetitionId");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("Competitions");
                 });
@@ -51,11 +54,14 @@ namespace Entities.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("CompetitorId");
 
                     b.HasIndex("CompetitionId");
+
+                    b.HasIndex("Name", "CompetitionId")
+                        .IsUnique();
 
                     b.ToTable("Competitors");
                 });

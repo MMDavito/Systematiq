@@ -16,7 +16,7 @@ namespace Entities.Migrations
                 {
                     CompetitionId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -29,7 +29,7 @@ namespace Entities.Migrations
                 {
                     CompetitorId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     CompetitionId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -44,9 +44,21 @@ namespace Entities.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Competitions_Name",
+                table: "Competitions",
+                column: "Name",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Competitors_CompetitionId",
                 table: "Competitors",
                 column: "CompetitionId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Competitors_Name_CompetitionId",
+                table: "Competitors",
+                columns: new[] { "Name", "CompetitionId" },
+                unique: true);
         }
 
         /// <inheritdoc />
